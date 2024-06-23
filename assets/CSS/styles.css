@@ -1,0 +1,50 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Media query para dispositivos grandes (tabletas y escritorio) */
+@media (min-width: 992px) {
+    /* Ejemplo: aumentar tamaño del texto en pantalla grande */
+    .display-1 {
+        font-size: 3.5rem;
+    }
+
+    /* Alinear la imagen a la derecha en pantallas grandes */
+    .img-fluid {
+        float: right;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Media query para dispositivos medianos (tabletas y móviles en orientación horizontal) */
+@media (max-width: 991px) {
+    /* Ejemplo: reducir tamaño del texto en pantallas medianas */
+    .display-1 {
+        font-size: 2.5rem;
+    }
+
+    /* Alinear la imagen al centro en pantallas medianas */
+    .img-fluid {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 80%;
+        height: auto;
+    }
+}
+
+/* Media query para dispositivos pequeños (teléfonos móviles en orientación vertical) */
+@media (max-width: 767px) {
+    /* Ejemplo: aún más reducción del tamaño del texto en pantallas pequeñas */
+    .display-1 {
+        font-size: 2rem;
+    }
+
+    /* Alinear la imagen al centro en pantallas pequeñas */
+    .img-fluid {
+        max-width: 100%;
+        height: auto;
+    }
+}
